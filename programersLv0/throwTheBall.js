@@ -13,3 +13,4 @@ function solution(numbers, k) {
 // whlie 반복문으로 cnt = cnt + 2
 // cnt < order 한 이유는 cnt <= order를 하게되면 cnt값이 2더 커져 버리기 때문이다.
 // k - 1 하는 이유는 자기 차례를 빼야하기 때문에 -1 [0] 배열이 첫번째 배열이니까 빼줌
+// 그 상태로 배열을 리턴
