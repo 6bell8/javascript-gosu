@@ -23,19 +23,24 @@ function solution(p) {
   return [x, c].join(" + ");
 }
 
-function solution(polynomial) {
-  const arr = polynomial.split(" + ");
+function solution(p) {
+  const arr = p.split(" + ");
+  // + 공백 제거할 때 굳이 trim안쓰고 split으로 처리할 수 있었음,,
   const xNum = arr
     .filter((n) => n.includes("x"))
+    // x만 골라줌
     .map((n) => n.replace("x", "") || "1")
+    // n파라미터로 매핑
     .reduce((acc, cur) => acc + parseInt(cur, 10), 0);
+  // 문자열 숫자로 반환하면서 reduce로 더해줌
   const num = arr
     .filter((n) => !isNaN(n))
+    // 상수항에서 숫자만 골라줌,(이중 중복이라서 헷갈리네)
     .reduce((acc, cur) => acc + parseInt(cur, 10), 0);
-
+  // 상수항 더하기
   let answer = [];
   if (xNum) answer.push(`${xNum === 1 ? "" : xNum}x`);
   if (num) answer.push(num);
 
-  return answer.join(" + ");
+  return arr;
 }
