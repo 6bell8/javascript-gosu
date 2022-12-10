@@ -5,9 +5,9 @@ function solution(s) {
   return newSide - s[1] + minusSide;
 }
 
+// sort 먼저 해주고
 // 나머지 긴 선분의 합이 작아야 됨
 // sort했을 때 가장긴변은 [1] - [0] < ? <= [1]
-// sort 먼저 해주고
 // [0] + [1] = [2]
 // [1] - [0] = ?
 // ([2] - [1]) + ?
