@@ -63,5 +63,4 @@ function solution(id_pw, db) {
   for (let d of db) if (d[1] === id_pw[1]) return "login";
   //db 배열에서 비교 할 때 of, let d로 패스워드 값이 같으면 로그인 리턴 아님 다른 거 리턴
   return "wrong pw";
-  //12.11
 }
