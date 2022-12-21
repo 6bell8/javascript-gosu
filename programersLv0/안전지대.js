@@ -5,7 +5,7 @@ function solution(board) {
     for (let j = 0; j < board[i].length; j++) {
       // 폭탄이 1일 때 세부사항 설정
       if (board[i][j] == 1) {
-        // 맨 윗줄이 아닌경우
+        // 맨 윗줄이 아닌경우 // && 뒤에 있는 마지막 조건값만 2로 변경 된다고 생각하면 된다.
         if (i !== 0 && board[i - 1][j] !== 1) {
           board[i - 1][j] = 2;
         }
