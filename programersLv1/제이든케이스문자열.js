@@ -7,6 +7,7 @@ function solution(s) {
         (v) =>
           v.charAt(0).toUpperCase() +
           //substring으로 문자열 바꿔줄 스타트지점 선택 이후 소문자 변환
+          //substr과 똑같은 기능
           v.substring(1).toLowerCase()
       )
       .join(" ")
