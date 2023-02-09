@@ -12,7 +12,7 @@ function solution(A, B) {
   return sum;
 }
 
-// sort로 분류하고, reduce 파라미터로 total값에 더하기
+// sort로 분류하고, reduce 파라미터 total값에 더하기
 function solution(A, B) {
   A.sort((a, b) => a - b);
   B.sort((a, b) => b - a);

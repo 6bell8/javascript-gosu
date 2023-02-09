@@ -17,7 +17,7 @@ process.stdin.on("data", (data) => {
   const n = data.split(" ");
   const a = Number(n[0]),
     b = Number(n[1]);
-  // row = 행 repeat(a)를 통해서 new Array fill보다 쉽게 구현,
+  // row = 행 repeat(a)를 통해서 new Array fill보다 쉽게 구현.
   const row = "*".repeat(a);
   for (let i = 0; i < b; i++) {
     console.log(row);
